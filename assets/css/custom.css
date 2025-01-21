@@ -1,0 +1,84 @@
+@font-face
+{
+    font-family: "irsans";
+    font-style: normal;
+    font-weight: 900;
+    src: url(../font/iranSans/irsans-b.eot?67d2920ac1e0164c957e884da0b1fc2b);
+    src: url(../font/iranSans/irsans-b.eot?67d2920ac1e0164c957e884da0b1fc2b) format("embedded-opentype"), url(../font/iranSans/irsans-b.woff?a6c7f37a03e19d237de343688a10330f) format("woff"), url(../font/iranSans/irsans-b.ttf?3c04bd57fa8240b0ec575d8c1ff80dbb) format("truetype");
+}
+
+@font-face
+{
+    font-family: "irsans";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../font/iranSans/irsans-m.eot?3953f2446de46ca0a52f371df635a547);
+    src: url(../font/iranSans/irsans-m.eot?3953f2446de46ca0a52f371df635a547) format("embedded-opentype"), url(../font/iranSans/irsans-m.woff?7698268f336a35d87bbf591a0fe5f41d) format("woff"), url(../font/iranSans/irsans-m.ttf?2ae855f1c7b7756f2aba76f0915b20b8) format("truetype");
+}
+
+@font-face
+{
+    font-family: "irsans";
+    font-style: normal;
+    font-weight: 500;
+    src: url(../font/iranSans/irsans.eot?4f3cd08001a912553842788147e162c2);
+    src: url(../font/iranSans/irsans.eot?4f3cd08001a912553842788147e162c2) format("embedded-opentype"), url(../font/iranSans/irsans.woff?ba2fd9dab30cd8771aa3b53aa6b036e3) format("woff"), url(../font/iranSans/irsans.ttf?71617be58eaec728ca3b9d4d5da8b11d) format("truetype");
+}
+
+@font-face
+{
+    font-family: "irsans";
+    font-style: normal;
+    font-weight: 300;
+    src: url(../font/iranSans/irsans-l.eot?c3e2315906102c635b02db3a6666299b);
+    src: url(../font/iranSans/irsans-l.eot?c3e2315906102c635b02db3a6666299b) format("embedded-opentype"), url(../font/iranSans/irsans-l.woff?ef7595542cb1d899cefcabddb3a59f7f) format("woff"), url(../font/iranSans/irsans-l.ttf?2fd2464904104b41ac006f718c6de468) format("truetype");
+}
+
+@font-face
+{
+    font-family: "irsans";
+    font-style: normal;
+    font-weight: 100;
+    src: url(../font/iranSans/irsans-u.eot?c6348f2607ffbf9f301e2a2bd6bfba4c);
+    src: url(../font/iranSans/irsans-u.eot?c6348f2607ffbf9f301e2a2bd6bfba4c) format("embedded-opentype"), url(../font/iranSans/irsans-u.woff?c2cac1dd087e299cd537621798bd50eb) format("woff"), url(../font/iranSans/irsans-u.ttf?cbc29f4ae7f67bce75b49ee6f69678ff) format("truetype");
+}
+
+body
+{
+    font-family: "irsans", irsans, sans-serif!important;
+}
+.dropdown-menu
+{
+    padding: 10px !important;
+}
+.dropdown-item:hover
+{
+    border-radius: 5px !important;
+    background-color: #f8f8f8 !important;
+}
+.dropdown-item:focus
+{
+    background-color: #ececec !important;
+    color: #2f2f2f !important;
+}
+@media (max-width: 992px)
+{
+    .dropdown-menu
+    {
+        border-radius: 0 !important;
+        border: 0;
+        border-right: 1px #dee2e6 solid;
+        margin-right: 5px;
+    }
+}
+@media (max-width: 992px)
+{
+    /*.carousel-item {*/
+    /*    height: 100%;*/
+    /*}*/
+    .carousel-item img {
+        object-fit: scale-down;
+        width: 100%;
+        height: 100%;
+    }
+}

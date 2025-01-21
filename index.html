@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Form Builder</title>
+    <!--  Bootstrap Styles  -->
+    <link href="assets/bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css" rel="stylesheet" type="text/css">
+    <!--  Bootstrap Icons  -->
+    <link href="assets/bootstrap-icons-1.11.3/bootstrap-icons.min.css" rel="stylesheet" type="text/css">
+    <!--  Custom Styles  -->
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container-fluid bg-danger py-2">
+        <div class="d-flex align-items-center justify-content-center">
+            <h1 class="fs-4 text-white m-0">فرم ساز ساده</h1>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container my-4">
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <div class="available-fields p-2">
+                        <div class="field bg-primary my-2 text-white p-2 rounded-2" style="cursor: move" id="text-field" draggable="true">
+                            <i class="bi bi-text-indent-left me-1"></i> ورودی متنی
+                        </div>
+                        <div class="field bg-primary my-2 text-white p-2 rounded-2" style="cursor: move" id="textarea-field" draggable="true">
+                            <i class="bi bi-textarea me-1"></i> متن طولانی
+                        </div>
+                        <div class="field bg-primary my-2 text-white p-2 rounded-2" style="cursor: move" id="number-field" draggable="true">
+                            <i class="bi bi-sort-numeric-down me-1"></i> ورودی عددی
+                        </div>
+                        <div class="field bg-primary my-2 text-white p-2 rounded-2" style="cursor: move" id="email-field" draggable="true">
+                            <i class="bi bi-envelope me-1"></i> ورودی ایمیل
+                        </div>
+                        <div class="field bg-primary my-2 text-white p-2 rounded-2" style="cursor: move" id="date-field" draggable="true">
+                            <i class="bi bi-calendar me-1"></i> ورودی تاریخ
+                        </div>
+                        <div class="field bg-primary my-2 text-white p-2 rounded-2" style="cursor: move" id="checkbox-field" draggable="true">
+                            <i class="bi bi-check-square me-1"></i> چک باکس
+                        </div>
+                        <div class="field bg-primary my-2 text-white p-2 rounded-2" style="cursor: move" id="radio-field" draggable="true">
+                            <i class="bi bi-check-circle me-1"></i> رادیو باکس
+                        </div>
+                        <div class="field bg-primary my-2 text-white p-2 rounded-2" style="cursor: move" id="select-field" draggable="true">
+                            <i class="bi bi-list me-1"></i>لیست کشویی
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9 form-builder rounded-2" style="border: 2px #000 dashed" id="form-builder">
+                    <div id="form-container" class="p-4"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-end">
+                <button class="btn btn-success" onclick="generateJSON()">خروجی جیسون</button>
+            </div>
+            <pre id="jsonOutput" class="mt-3" dir="ltr" style="white-space: pre-wrap; word-wrap: break-word"></pre>
+        </div>
+    </div>
+
+    <!--  Bootstrap js code  -->
+    <script src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Jquery Library-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!-- Jquery UI Library-->
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <!--  Custom js code  -->
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
